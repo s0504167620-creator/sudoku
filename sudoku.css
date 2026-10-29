@@ -1,0 +1,60 @@
+
+body{
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ height:100vh;
+ margin:0;
+background-image: url(./Image/0e9a8a987492dbc3bfe06d25c861f5fc.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/*לוח המשחק*/
+#sudoku-board{
+ display:grid;
+ height:40vw;
+ width:40vw;
+ background-color:white;
+ border:0.3vw solid black;
+ grid-template-columns:repeat(9, 1fr);
+ grid-template-rows:repeat(9, 1fr);
+}
+
+/*הריבועים הקטנים של הלוח*/
+.squres{
+ border:1px solid lightgray;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+}
+
+/*התיבת טקסט של הריבוע*/
+.squresInput{
+ width:100%;
+ height:100%;
+ text-align:center;
+ font-size:2em;
+ border:none;
+ outline:none;
+ box-sizing:border-box;
+}
+
+
+/*הכפתורים*/
+.div_Buttons{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   position: absolute;
+   right: 71vw; 
+   bottom: 7vh; 
+}
+
+.buttons{
+    width: 150px;
+    height: 50px;
+    font-size: larger;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+}
